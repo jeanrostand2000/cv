@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localisateur de Bornes de Recharge Électrique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#carte">Carte des Bornes</a></li>
+                <li><a href="#planificateur">Planifier un Trajet</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <h1>Bienvenue sur notre Localisateur de Bornes de Recharge</h1>
+            <p>Trouvez facilement des bornes de recharge pour votre véhicule électrique et planifiez vos trajets.</p>
+        </section>
+
+        <section id="carte">
+            <h2>Carte des Bornes de Recharge</h2>
+            <div id="map">
+                <!-- La carte sera insérée ici par l'extension WP Google Maps -->
+            </div>
+        </section>
+
+        <section id="planificateur">
+            <h2>Planifiez votre Trajet</h2>
+            <form>
+                <label for="depart">Point de départ:</label>
+                <input type="text" id="depart" name="depart" required>
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="vehicule">Type de véhicule:</label>
+                <select id="vehicule" name="vehicule">
+                    <option value="berline">Berline électrique</option>
+                    <option value="suv">SUV électrique</option>
+                    <option value="citadine">Citadine électrique</option>
+                </select>
+
+                <button type="submit">Planifier</button>
+            </form>
+        </section>
+
+        <section id="apropos">
+            <h2>À Propos de Nous</h2>
+            <p>Nous sommes dédiés à faciliter la transition vers la mobilité électrique en fournissant des outils pratiques pour les propriétaires de véhicules électriques.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Localisateur de Bornes de Recharge Électrique. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
